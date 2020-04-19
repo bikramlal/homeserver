@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+    deluge:
+        image: linuxserver/deluge
+        container_name: deluge
+        network_mode: host
+        environment:
+            - PUID=1000
+            - GUID=1000
+            - TZ=timezone
+            - UMASK_SET=022
+            - DELUGE_LOG_LEVEL=error
+        volumes:
+            - ./config:/config
+            - /media/usb/plex/movies:/Downloads
+        ports:
+            - 8080:80
+        restart: always
+
