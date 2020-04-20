@@ -1,0 +1,18 @@
+version: "2.1"
+services:
+  syncthing:
+    image: linuxserver/syncthing
+    container_name: syncthing
+    environment:
+      - PUID=1000
+      - PGID=1001
+      - TZ=Europe/London
+      - UMASK_SET=022
+    volumes:
+      - ./config:/config
+      - /media/usb/Sync:/Sync
+    ports:
+      - 8384:8384
+      - 22000:22000
+      - 21027:21027/udp
+    restart: always

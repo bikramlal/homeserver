@@ -1,0 +1,46 @@
+=============== Apr 20, 2020 (BST) ===============
+13:53:01.515242 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:53:01.592900 db@open opening
+13:53:01.596890 version@stat F·[] S·0B[] Sc·[]
+13:53:01.638422 db@janitor F·2 G·0
+13:53:01.638643 db@open done T·45.537235ms
+13:53:03.128598 memdb@flush N·3 S·97B
+13:53:03.172366 memdb@flush created L0@3 N·3 S·186B "\ndb..ion,v3":"\nla..ime,v1"
+13:53:03.172671 version@stat F·[1] S·186B[186B] Sc·[0.25]
+13:53:03.217278 memdb@flush committed F·1 T·88.416683ms
+13:53:03.217679 journal@remove removed @1
+13:53:03.217828 table@compaction range L-1 "":""
+13:53:03.217992 table@compaction L0·1 -> L1·0 S·186B Q·3
+13:53:03.273155 table@build created L1@4 N·3 S·186B "\ndb..ion,v3":"\nla..ime,v1"
+13:53:03.273485 version@stat F·[0 1] S·186B[0B 186B] Sc·[0.00 0.00]
+13:53:03.317911 table@compaction committed F~ S~ Ke·0 D·0 T·99.763689ms
+13:53:03.319038 table@remove removed @3
+13:54:02.849857 memdb@flush N·6 S·178B
+13:54:02.902817 memdb@flush created L0@6 N·6 S·237B "\x04de..can,v9":"\npr..ion,v4"
+13:54:02.903160 version@stat F·[1 1] S·423B[237B 186B] Sc·[0.25 0.00]
+13:54:02.947656 memdb@flush committed F·1 T·97.519452ms
+13:54:02.948147 journal@remove removed @2
+13:54:02.948342 table@compaction range L-1 "":""
+13:54:02.948540 table@compaction L0·1 -> L1·1 S·423B Q·9
+13:54:02.992589 table@build created L1@7 N·9 S·315B "\x04de..can,v9":"\npr..ion,v4"
+13:54:02.992860 version@stat F·[0 1] S·315B[0B 315B] Sc·[0.00 0.00]
+13:54:03.059957 table@compaction committed F-1 S-108B Ke·0 D·0 T·111.256402ms
+13:54:03.060612 table@remove removed @6
+13:54:03.060956 table@remove removed @4
+13:58:53.915122 db@close closing
+13:58:53.915939 db@close done T·802.477µs
+=============== Apr 20, 2020 (BST) ===============
+13:59:41.042188 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:59:41.043276 version@stat F·[0 1] S·315B[0B 315B] Sc·[0.00 0.00]
+13:59:41.043667 db@open opening
+13:59:41.044168 journal@recovery F·1
+13:59:41.047686 journal@recovery recovering @5
+13:59:41.095742 memdb@flush created L0@8 N·10 S·362B "\x03NC..een,v19":"\nla..ime,v10"
+13:59:41.099849 version@stat F·[1 1] S·677B[362B 315B] Sc·[0.25 0.00]
+13:59:41.235731 db@janitor F·4 G·0
+13:59:41.235955 db@open done T·192.153869ms
+14:47:55.523948 table@compaction L0·1 -> L1·1 S·677B Q·299
+14:47:55.616606 table@build created L1@11 N·11 S·423B "\x03NC..een,v19":"\npr..ion,v4"
+14:47:55.616967 version@stat F·[0 1] S·423B[0B 423B] Sc·[0.00 0.00]
+14:47:55.703547 table@compaction committed F-1 S-254B Ke·0 D·8 T·160.914717ms
+14:47:55.704668 table@remove removed @7
